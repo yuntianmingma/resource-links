@@ -13,7 +13,7 @@
     ],
     "source": "manual",
     "addedAt": "2026-04-24T00:00:00.000Z",
-    "lastChecked": "2026-04-24T12:37:23.254Z",
+    "lastChecked": "2026-04-24T12:50:06.687Z",
     "status": "active"
   },
   {
@@ -30,7 +30,7 @@
     ],
     "source": "manual",
     "addedAt": "2026-04-24T00:00:00.000Z",
-    "lastChecked": "2026-04-24T12:37:23.254Z",
+    "lastChecked": "2026-04-24T12:50:06.687Z",
     "status": "active"
   },
   {
@@ -46,7 +46,7 @@
     ],
     "source": "manual",
     "addedAt": "2026-04-24T00:00:00.000Z",
-    "lastChecked": "2026-04-24T12:37:23.254Z",
+    "lastChecked": "2026-04-24T12:50:06.687Z",
     "status": "dead"
   },
   {
@@ -62,7 +62,7 @@
     ],
     "source": "manual",
     "addedAt": "2026-04-24T00:00:00.000Z",
-    "lastChecked": "2026-04-24T12:37:23.254Z",
+    "lastChecked": "2026-04-24T12:50:06.687Z",
     "status": "active"
   },
   {
@@ -78,7 +78,7 @@
     ],
     "source": "manual",
     "addedAt": "2026-04-24T00:00:00.000Z",
-    "lastChecked": "2026-04-24T12:37:23.254Z",
+    "lastChecked": "2026-04-24T12:50:06.687Z",
     "status": "active"
   },
   {
@@ -94,7 +94,7 @@
     ],
     "source": "manual",
     "addedAt": "2026-04-24T00:00:00.000Z",
-    "lastChecked": "2026-04-24T12:37:23.254Z",
+    "lastChecked": "2026-04-24T12:50:06.687Z",
     "status": "unknown"
   },
   {
@@ -111,7 +111,7 @@
     ],
     "source": "manual",
     "addedAt": "2026-04-24T00:00:00.000Z",
-    "lastChecked": "2026-04-24T12:37:23.254Z",
+    "lastChecked": "2026-04-24T12:50:06.687Z",
     "status": "active"
   },
   {
@@ -125,8 +125,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-rop02y",
@@ -139,8 +139,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-nc8vk0",
@@ -153,8 +153,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-n05443",
@@ -167,8 +167,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-qb20e6",
@@ -181,8 +181,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-kjenww",
@@ -195,8 +195,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-myk69e",
@@ -209,8 +209,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-fdq4ua",
@@ -223,8 +223,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-qxrno9",
@@ -237,8 +237,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-esaweh",
@@ -251,8 +251,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-yu27iu",
@@ -265,8 +265,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-qs4sfx",
@@ -279,8 +279,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-21602p",
@@ -293,8 +293,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-dqe50y",
@@ -307,8 +307,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-rdwzy2",
@@ -321,8 +321,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-jfz2xe",
@@ -335,8 +335,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-uwb819",
@@ -349,8 +349,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-h2oz7k",
@@ -363,8 +363,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-h1l2k7",
@@ -377,8 +377,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-jdp6gc",
@@ -391,8 +391,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-qz92wg",
@@ -405,8 +405,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-6vdtul",
@@ -419,8 +419,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-lqynij",
@@ -433,8 +433,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-97ucwh",
@@ -447,8 +447,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-3sjbr0",
@@ -461,8 +461,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-mit7g4",
@@ -475,8 +475,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-dne5m9",
@@ -489,8 +489,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-grmk88",
@@ -503,8 +503,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-83udjj",
@@ -517,8 +517,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-p8of83",
@@ -531,8 +531,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-9165y4",
@@ -545,8 +545,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-g8q5s5",
@@ -559,8 +559,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-4q6l8d",
@@ -573,8 +573,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-1lx1c6",
@@ -587,8 +587,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-y0qwcr",
@@ -601,8 +601,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-snnuuk",
@@ -615,8 +615,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-2s7m3f",
@@ -629,8 +629,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-z6z0bl",
@@ -643,8 +643,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-gy2b7s",
@@ -657,8 +657,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-djwsiv",
@@ -671,7 +671,7 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:50:06.687Z",
     "status": "unknown"
   },
   {
@@ -685,8 +685,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-j1tefx",
@@ -699,8 +699,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-6qkw1g",
@@ -713,8 +713,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-6gl3zb",
@@ -727,8 +727,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-89y9w6",
@@ -741,8 +741,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-kq3vnw",
@@ -755,8 +755,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-5m374r",
@@ -769,8 +769,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-j710gj",
@@ -783,8 +783,8 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
-    "status": "unknown"
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
   },
   {
     "id": "rss-324fs4",
@@ -797,7 +797,273 @@
     ],
     "source": "rss",
     "addedAt": "2026-04-24T12:37:43.860Z",
-    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:50:06.687Z",
+    "status": "active"
+  },
+  {
+    "id": "rss-erkgf8",
+    "title": "Show HN: Endo Familiar, an O-cap based JavaScript agent sandbox",
+    "url": "https://dcfoundation.io/containing-ai-agents-the-endo-familiar-demo/",
+    "description": "Article URL: https://dcfoundation.io/containing-ai-agents-the-endo-familiar-demo/\nComments URL: https://news.ycombinator",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-5m8e9c",
+    "title": "Show HN: Run coding agents in microVM sandboxes instead of your host machine",
+    "url": "https://github.com/superhq-ai/superhq",
+    "description": "Hi HN, we built SuperHQ, an open source app that runs AI coding agents in isolated microVM sandboxes instead of directly",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-8pjhsn",
+    "title": "Show HN: LocalLLM – Recipes for Running the Local LLM (Need Contributors)",
+    "url": "https://locallllm.fly.dev",
+    "description": "I built localLLLM: a small community project for running local models.\nLive: https://locallllm.fly.dev\nThe goal is simpl",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-sg8wui",
+    "title": "Show HN: Honker – Postgres NOTIFY/LISTEN Semantics for SQLite",
+    "url": "https://github.com/russellromney/honker",
+    "description": "Article URL: https://github.com/russellromney/honker\nComments URL: https://news.ycombinator.com/item?id=47874647\nPoints:",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-9hkzm7",
+    "title": "Show HN: Built a daily game where you sort historical events chronologically",
+    "url": "https://hisorty.app/",
+    "description": "Article URL: https://hisorty.app/\nComments URL: https://news.ycombinator.com/item?id=47873966\nPoints: 60\n# Comments: 58",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-l23say",
+    "title": "Show HN: We built a way for Claude Code to join meetings like a real teammate",
+    "url": "https://news.ycombinator.com/item?id=47873585",
+    "description": "Hi HN — we built agentcall.dev because the coding agent you're already running in your terminal shouldn't be trapped the",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-44zo3i",
+    "title": "Show HN: Cartoon Studio – an open-source desktop app for making 2D cartoon shows",
+    "url": "https://github.com/Jellypod-Inc/cartoon-studio",
+    "description": "Hi HN — I built Cartoon Studio, an open-source desktop app for making simple 2D cartoon scenes and shows.\nThe basic flow",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-494giz",
+    "title": "Show HN: Algorithmic String Art, accessible to all",
+    "url": "https://string-loom.pages.dev",
+    "description": "Article URL: https://string-loom.pages.dev\nComments URL: https://news.ycombinator.com/item?id=47870432\nPoints: 12\n# Comm",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-3p4zoh",
+    "title": "Show HN: Ghost Pepper Meet local meeting transcription and diarization",
+    "url": "https://matthartman.github.io/ghost-pepper/",
+    "description": "100% local & private transcription engine for macOS. Captures & does speaker diarization. Originally was building as its",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-skf0ei",
+    "title": "Show HN: XTrace – Encrypted vector DB (search embeddings without exposing them)",
+    "url": "https://github.com/XTraceAI/xtrace-sdk",
+    "description": "Hey everyone! This is XTrace. Wanted to share what we’ve been working on for the past year.\nWe built a private vector da",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-31lzf0",
+    "title": "Show HN: Everest Drive – a multiplayer spaceship crew simulator in the browser",
+    "url": "https://everestdrive.io/",
+    "description": "Hi HN! I'm working on an open-world multiplayer space sim with submarine-warfare-inspired combat. Crew a ship, haul carg",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-hhl4rs",
+    "title": "Show HN: Netlify for Agents",
+    "url": "https://netlify.ai",
+    "description": "I launched Netlify with a Show HN more than 11 years today, for humans.\nToday we're launching our Agent first version of",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-ukhcn5",
+    "title": "Show HN: Agent Vault – Open-source credential proxy and vault for agents",
+    "url": "https://github.com/Infisical/agent-vault",
+    "description": "Hey HN! Today we're launching Agent Vault - an open source HTTP credential proxy and vault for AI agents. Repo is at htt",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-3eg19h",
+    "title": "Show HN: Broccoli, one shot coding agent on the cloud",
+    "url": "https://github.com/besimple-oss/broccoli",
+    "description": "Hi HN — we built Broccoli, an open-source harness for taking coding tasks from Linear, running them in isolated cloud sa",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-wuw2oy",
+    "title": "Show HN: Gemini Plugin for Claude Code",
+    "url": "https://github.com/m-ghalib/gemini-plugin-cc",
+    "description": "I built a plugin that lets Claude Code delegate work to Gemini CLI.\nI started this after finding myself reaching for Gem",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-q9zdhk",
+    "title": "Show HN: Almanac MCP, turn Claude Code into a Deep Research agent",
+    "url": "https://www.openalmanac.org/",
+    "description": "I am Rohan, and I have grown really frustrated with CC's search and read tools. They use Haiku to summarise all the sear",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-osx3tq",
+    "title": "Show HN: Daemons – we pivoted from building agents to cleaning up after them",
+    "url": "https://charlielabs.ai/",
+    "description": "For almost two years, we've been developing Charlie, a coding agent that is autonomous, cloud-based, and focused primari",
+    "category": "software",
+    "tags": [
+      "Show HN"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-6izfq5",
+    "title": "Habitual coffee intake shapes the microbiome, modifies physiology and cognition",
+    "url": "https://www.nature.com/articles/s41467-026-71264-8",
+    "description": "Article URL: https://www.nature.com/articles/s41467-026-71264-8\nComments URL: https://news.ycombinator.com/item?id=47885",
+    "category": "other",
+    "tags": [
+      "Hacker News"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-voxknb",
+    "title": "DeepSeek v4",
+    "url": "https://api-docs.deepseek.com/",
+    "description": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main...\nComments URL: https://news.ycombinator.com/item?id=47884",
+    "category": "other",
+    "tags": [
+      "Hacker News"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:51:04.552Z",
+    "lastChecked": "2026-04-24T12:51:04.552Z",
     "status": "unknown"
   }
 ]
