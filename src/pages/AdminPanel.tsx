@@ -64,33 +64,56 @@ export default function AdminPanel() {
   const [pwdNew, setPwdNew] = useState('');
   const [changingPwd, setChangingPwd] = useState(false);
 
-  // Save links to GitHub API
-  const saveToGitHub = async (newLinks: Link[], commitMsg: string) => {
+  // Save links to GitHub API (with 409 retry)
+  const saveToGitHub = async (transform: (links: Link[]) => Link[], commitMsg: string) => {
     if (!token) { setMsg('请先设置 GitHub Token'); return false; }
     setSaving(true);
     setMsg('保存中...');
-    try {
-      const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${LINKS_PATH}`, {
-        method: 'PUT',
-        headers: headers(),
-        body: JSON.stringify({
-          message: commitMsg,
-          content: base64(JSON.stringify(newLinks, null, 2) + '\n'),
-          sha,
-        }),
-      });
-      if (!res.ok) throw new Error(await res.text());
-      const data = await res.json();
-      setSha(data.content.sha);
-      setLinks(newLinks);
-      setMsg('✅ 已保存，Actions 部署后生效（约 2 分钟）');
-      setSaving(false);
-      return true;
-    } catch (e) {
-      setMsg(`保存失败: ${(e as Error).message}`);
-      setSaving(false);
-      return false;
+
+    let currentLinks = links;
+    let currentSha = sha;
+
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        const newLinks = transform(currentLinks);
+        const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${LINKS_PATH}`, {
+          method: 'PUT',
+          headers: headers(),
+          body: JSON.stringify({
+            message: commitMsg,
+            content: base64(JSON.stringify(newLinks, null, 2) + '\n'),
+            sha: currentSha,
+          }),
+        });
+
+        if (res.status === 409 && attempt === 0) {
+          setMsg('检测到远程数据已更新，正在刷新并重试...');
+          const fetchRes = await fetch(`https://api.github.com/repos/${REPO}/contents/${LINKS_PATH}`, { headers: headers() });
+          if (!fetchRes.ok) throw new Error(await fetchRes.text());
+          const data = await fetchRes.json();
+          currentLinks = JSON.parse(decodeURIComponent(escape(atob(data.content))));
+          currentSha = data.sha;
+          setLinks(currentLinks);
+          continue;
+        }
+
+        if (!res.ok) throw new Error(await res.text());
+
+        const data = await res.json();
+        setSha(data.content.sha);
+        setLinks(newLinks);
+        setMsg('✅ 已保存，Actions 部署后生效（约 2 分钟）');
+        setSaving(false);
+        return true;
+      } catch (e) {
+        setMsg(`保存失败: ${(e as Error).message}`);
+        setSaving(false);
+        return false;
+      }
     }
+
+    setSaving(false);
+    return false;
   };
 
   const addOrUpdate = async () => {
@@ -98,22 +121,23 @@ export default function AdminPanel() {
     const now = new Date().toISOString();
     const tags = form.tags.split(/[,，]/).map(s => s.trim()).filter(Boolean);
 
-    let next: Link[];
-    if (editingId) {
-      next = links.map(l =>
-        l.id === editingId ? { ...l, title: form.title, url: form.url, description: form.description, category: form.category, tags, lastChecked: now } : l
-      );
-    } else {
-      const newLink: Link = {
-        id: Date.now().toString(),
-        title: form.title, url: form.url, description: form.description,
-        category: form.category, tags, source: 'manual',
-        addedAt: now, lastChecked: now, status: 'unknown',
-      };
-      next = [newLink, ...links];
-    }
-
-    const ok = await saveToGitHub(next, editingId ? `Update: ${form.title}` : `Add: ${form.title}`);
+    const ok = await saveToGitHub(
+      (currentLinks) => {
+        if (editingId) {
+          return currentLinks.map(l =>
+            l.id === editingId ? { ...l, title: form.title, url: form.url, description: form.description, category: form.category, tags, lastChecked: now } : l
+          );
+        }
+        const newLink: Link = {
+          id: Date.now().toString(),
+          title: form.title, url: form.url, description: form.description,
+          category: form.category, tags, source: 'manual',
+          addedAt: now, lastChecked: now, status: 'unknown',
+        };
+        return [newLink, ...currentLinks];
+      },
+      editingId ? `Update: ${form.title}` : `Add: ${form.title}`
+    );
     if (ok) {
       setForm({ title: '', url: '', description: '', category: 'other', tags: '' });
       setEditingId(null);
@@ -121,9 +145,11 @@ export default function AdminPanel() {
   };
 
   const remove = async (link: Link) => {
-    const next = links.filter(l => l.id !== link.id);
-    await saveToGitHub(next, `Remove: ${link.title}`);
-    if (editingId === link.id) {
+    const ok = await saveToGitHub(
+      (currentLinks) => currentLinks.filter(l => l.id !== link.id),
+      `Remove: ${link.title}`
+    );
+    if (ok && editingId === link.id) {
       setForm({ title: '', url: '', description: '', category: 'other', tags: '' });
       setEditingId(null);
     }
