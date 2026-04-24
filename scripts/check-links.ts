@@ -23,7 +23,7 @@ function sleep(ms: number) {
 const BROWSER_UA = 'Mozilla/5.0 (compatible; LinkChecker/1.0; +https://github.com/yuntianmingma/resource-links)';
 
 // Anti-bot status codes: site is likely alive but blocking automated checks
-const UNCERTAIN_STATUSES = new Set([403, 429, 503]);
+const UNCERTAIN_STATUSES = new Set([403, 405, 429, 503]);
 
 function classifyStatus(code: number): 'active' | 'dead' | 'unknown' {
   if (code >= 200 && code < 400) return 'active';
