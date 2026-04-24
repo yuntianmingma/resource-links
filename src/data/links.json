@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "title": "Project Gutenberg",
+    "url": "https://www.gutenberg.org/",
+    "description": "超过 70,000 本免费电子书，涵盖世界经典文学作品",
+    "category": "books",
+    "tags": ["免费", "电子书", "英文", "经典"],
+    "source": "manual",
+    "addedAt": "2026-04-24T00:00:00.000Z",
+    "lastChecked": "2026-04-24T00:00:00.000Z",
+    "status": "active"
+  },
+  {
+    "id": "2",
+    "title": "标准电子书",
+    "url": "https://standardebooks.org/",
+    "description": "精心排版、校对的高质量免费电子书",
+    "category": "books",
+    "tags": ["免费", "电子书", "精品", "英文"],
+    "source": "manual",
+    "addedAt": "2026-04-24T00:00:00.000Z",
+    "lastChecked": "2026-04-24T00:00:00.000Z",
+    "status": "active"
+  },
+  {
+    "id": "3",
+    "title": "MangaDex",
+    "url": "https://mangadex.org/",
+    "description": "多语言漫画阅读平台，社区驱动的漫画数据库",
+    "category": "comics",
+    "tags": ["漫画", "多语言", "免费"],
+    "source": "manual",
+    "addedAt": "2026-04-24T00:00:00.000Z",
+    "lastChecked": "2026-04-24T00:00:00.000Z",
+    "status": "active"
+  },
+  {
+    "id": "4",
+    "title": "Internet Archive",
+    "url": "https://archive.org/",
+    "description": "互联网档案馆，包含大量书籍、视频、软件等数字资源",
+    "category": "videos",
+    "tags": ["档案馆", "免费", "综合"],
+    "source": "manual",
+    "addedAt": "2026-04-24T00:00:00.000Z",
+    "lastChecked": "2026-04-24T00:00:00.000Z",
+    "status": "active"
+  },
+  {
+    "id": "5",
+    "title": "AlternativeTo",
+    "url": "https://alternativeto.net/",
+    "description": "软件替代品搜索引擎，发现各种软件的替代方案",
+    "category": "software",
+    "tags": ["软件推荐", "替代品", "众包"],
+    "source": "manual",
+    "addedAt": "2026-04-24T00:00:00.000Z",
+    "lastChecked": "2026-04-24T00:00:00.000Z",
+    "status": "active"
+  },
+  {
+    "id": "6",
+    "title": "Sci-Hub",
+    "url": "https://sci-hub.se/",
+    "description": "科研论文免费获取平台",
+    "category": "books",
+    "tags": ["论文", "学术", "免费"],
+    "source": "manual",
+    "addedAt": "2026-04-24T00:00:00.000Z",
+    "lastChecked": "2026-04-24T00:00:00.000Z",
+    "status": "unknown"
+  }
+]

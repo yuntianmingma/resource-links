@@ -1,0 +1,7 @@
+[
+  { "id": "books", "name": "书籍", "icon": "📚" },
+  { "id": "comics", "name": "漫画", "icon": "🎨" },
+  { "id": "videos", "name": "视频", "icon": "🎬" },
+  { "id": "software", "name": "软件", "icon": "💻" },
+  { "id": "other", "name": "其他", "icon": "📦" }
+]
