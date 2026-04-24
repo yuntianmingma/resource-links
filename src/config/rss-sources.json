@@ -1,7 +1,42 @@
 [
   {
-    "name": "示例RSS源",
-    "url": "https://example.com/feed.xml",
+    "name": "Project Gutenberg",
+    "url": "https://www.gutenberg.org/cache/epub/feeds/today.rss",
+    "category": "books"
+  },
+  {
+    "name": "Standard Ebooks",
+    "url": "https://rsshub.app/standardebooks/new",
+    "category": "books"
+  },
+  {
+    "name": "xkcd",
+    "url": "https://xkcd.com/rss.xml",
+    "category": "comics"
+  },
+  {
+    "name": "MangaPlus",
+    "url": "https://rsshub.app/mangaplus/latest",
+    "category": "comics"
+  },
+  {
+    "name": "Internet Archive Films",
+    "url": "https://archive.org/services/collection-rss.php?collection=feature_films",
+    "category": "videos"
+  },
+  {
+    "name": "GitHub Trending",
+    "url": "https://raw.githubusercontent.com/mhadidg/gh-trends/refs/heads/main/feed/rss.xml",
+    "category": "software"
+  },
+  {
+    "name": "AlternativeTo",
+    "url": "https://alternativeto.net/feed/new/",
+    "category": "software"
+  },
+  {
+    "name": "Hacker News",
+    "url": "https://hnrss.org/frontpage?count=20",
     "category": "other"
   }
 ]
