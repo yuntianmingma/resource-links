@@ -1,12 +1,12 @@
 [
   {
-    "name": "GitHub Trending",
-    "url": "https://raw.githubusercontent.com/mhadidg/gh-trends/refs/heads/main/feed/rss.xml",
+    "name": "Show HN",
+    "url": "https://hnrss.org/show?points=10",
     "category": "software"
   },
   {
     "name": "Hacker News",
-    "url": "https://hnrss.org/frontpage?count=10",
+    "url": "https://hnrss.org/frontpage?count=5&points=100",
     "category": "other"
   }
 ]
