@@ -1,6 +1,8 @@
 name: Daily Link Check & Update
 
 on:
+  push:
+    branches: [main]
   schedule:
     # Every day at 08:00 UTC (16:00 Beijing time)
     - cron: '0 8 * * *'
