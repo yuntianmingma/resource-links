@@ -1,55 +1,114 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import type { Link, CategoryId } from '../types';
-import linksData from '../data/links.json';
 import categoriesData from '../config/categories.json';
 
-const STORAGE_KEY = 'admin-links-backup';
+const REPO = 'yuntianmingma/resource-links';
+const FILE_PATH = 'src/data/links.json';
+const TOKEN_KEY = 'gh-token';
+
+function base64(str: string) {
+  return btoa(unescape(encodeURIComponent(str)));
+}
 
 export default function AdminPanel() {
-  const [links, setLinks] = useState<Link[]>(linksData as Link[]);
+  const [token, setToken] = useState(() => localStorage.getItem(TOKEN_KEY) || '');
+  const [links, setLinks] = useState<Link[]>([]);
+  const [sha, setSha] = useState('');
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
+  const [msg, setMsg] = useState('');
   const [form, setForm] = useState({
     title: '', url: '', description: '', category: 'other' as CategoryId, tags: '',
   });
   const [editingId, setEditingId] = useState<string | null>(null);
 
-  useEffect(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) setLinks(JSON.parse(saved));
-  }, []);
+  const headers = useCallback(() => ({
+    Authorization: `Bearer ${token}`,
+    'Content-Type': 'application/json',
+  }), [token]);
 
-  const persist = (next: Link[]) => {
-    setLinks(next);
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+  // Load links from GitHub API
+  const loadLinks = useCallback(async () => {
+    if (!token) { setLoading(false); return; }
+    try {
+      const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}`, { headers: headers() });
+      if (!res.ok) throw new Error(await res.text());
+      const data = await res.json();
+      const content = JSON.parse(decodeURIComponent(escape(atob(data.content))));
+      setLinks(content);
+      setSha(data.sha);
+      setMsg('已从 GitHub 加载');
+    } catch (e) {
+      setMsg(`加载失败: ${(e as Error).message}`);
+    }
+    setLoading(false);
+  }, [token, headers]);
+
+  useEffect(() => { loadLinks(); }, [loadLinks]);
+
+  // Save links to GitHub API
+  const saveToGitHub = async (newLinks: Link[], commitMsg: string) => {
+    if (!token) { setMsg('请先设置 GitHub Token'); return false; }
+    setSaving(true);
+    setMsg('保存中...');
+    try {
+      const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}`, {
+        method: 'PUT',
+        headers: headers(),
+        body: JSON.stringify({
+          message: commitMsg,
+          content: base64(JSON.stringify(newLinks, null, 2) + '\n'),
+          sha,
+        }),
+      });
+      if (!res.ok) throw new Error(await res.text());
+      const data = await res.json();
+      setSha(data.content.sha);
+      setLinks(newLinks);
+      setMsg('✅ 已保存，Actions 部署后生效（约 2 分钟）');
+      setSaving(false);
+      return true;
+    } catch (e) {
+      setMsg(`保存失败: ${(e as Error).message}`);
+      setSaving(false);
+      return false;
+    }
   };
 
-  const addOrUpdate = () => {
+  const addOrUpdate = async () => {
     if (!form.title || !form.url) return;
     const now = new Date().toISOString();
     const tags = form.tags.split(/[,，]/).map(s => s.trim()).filter(Boolean);
 
+    let next: Link[];
     if (editingId) {
-      persist(links.map(l =>
-        l.id === editingId
-          ? { ...l, title: form.title, url: form.url, description: form.description, category: form.category, tags, lastChecked: now }
-          : l
-      ));
+      next = links.map(l =>
+        l.id === editingId ? { ...l, title: form.title, url: form.url, description: form.description, category: form.category, tags, lastChecked: now } : l
+      );
     } else {
       const newLink: Link = {
         id: Date.now().toString(),
-        title: form.title,
-        url: form.url,
-        description: form.description,
-        category: form.category,
-        tags,
-        source: 'manual',
-        addedAt: now,
-        lastChecked: now,
-        status: 'unknown',
+        title: form.title, url: form.url, description: form.description,
+        category: form.category, tags, source: 'manual',
+        addedAt: now, lastChecked: now, status: 'unknown',
       };
-      persist([newLink, ...links]);
+      next = [newLink, ...links];
     }
-    setForm({ title: '', url: '', description: '', category: 'other', tags: '' });
-    setEditingId(null);
+
+    const ok = await saveToGitHub(next, editingId ? `Update: ${form.title}` : `Add: ${form.title}`);
+    if (ok) {
+      setForm({ title: '', url: '', description: '', category: 'other', tags: '' });
+      setEditingId(null);
+    }
+  };
+
+  const remove = async (link: Link) => {
+    const next = links.filter(l => l.id !== link.id);
+    await saveToGitHub(next, `Remove: ${link.title}`);
+    if (editingId === link.id) {
+      setForm({ title: '', url: '', description: '', category: 'other', tags: '' });
+      setEditingId(null);
+    }
   };
 
   const edit = (link: Link) => {
@@ -58,12 +117,10 @@ export default function AdminPanel() {
     window.scrollTo(0, 0);
   };
 
-  const remove = (id: string) => {
-    persist(links.filter(l => l.id !== id));
-    if (editingId === id) {
-      setForm({ title: '', url: '', description: '', category: 'other', tags: '' });
-      setEditingId(null);
-    }
+  const saveToken = (val: string) => {
+    setToken(val);
+    localStorage.setItem(TOKEN_KEY, val);
+    setLoading(true);
   };
 
   const exportJSON = () => {
@@ -75,52 +132,53 @@ export default function AdminPanel() {
     URL.revokeObjectURL(a.href);
   };
 
+  if (loading) return <div className="page"><p>加载中...</p></div>;
+
+  if (!token) {
+    return (
+      <div className="page admin-panel">
+        <h2>🔧 管理面板</h2>
+        <div className="admin-form">
+          <h3>设置 GitHub Token</h3>
+          <p style={{ fontSize: 14, color: 'var(--text-secondary)' }}>
+            需要一个 <a href="https://github.com/settings/tokens/new?scopes=repo&description=ResourceLinks" target="_blank" rel="noopener">GitHub Personal Access Token (classic)</a>，
+            勾选 <strong>repo</strong> 权限即可。Token 仅保存在你的浏览器中。
+          </p>
+          <input
+            type="password"
+            placeholder="ghp_xxxxxxxxxxxxxxxxxxxx"
+            onChange={e => saveToken(e.target.value)}
+          />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="page admin-panel">
       <h2>🔧 管理面板</h2>
 
+      {msg && <div className="admin-msg">{msg}</div>}
+
       <div className="admin-form">
         <h3>{editingId ? '编辑链接' : '添加链接'}</h3>
-        <input
-          placeholder="标题 *"
-          value={form.title}
-          onChange={e => setForm({ ...form, title: e.target.value })}
-        />
-        <input
-          placeholder="URL *"
-          value={form.url}
-          onChange={e => setForm({ ...form, url: e.target.value })}
-        />
-        <textarea
-          placeholder="简短描述"
-          value={form.description}
-          onChange={e => setForm({ ...form, description: e.target.value })}
-        />
-        <select
-          value={form.category}
-          onChange={e => setForm({ ...form, category: e.target.value as CategoryId })}
-        >
-          {categoriesData.map(c => (
-            <option key={c.id} value={c.id}>{c.icon} {c.name}</option>
-          ))}
+        <input placeholder="标题 *" value={form.title} onChange={e => setForm({ ...form, title: e.target.value })} />
+        <input placeholder="URL *" value={form.url} onChange={e => setForm({ ...form, url: e.target.value })} />
+        <textarea placeholder="简短描述" value={form.description} onChange={e => setForm({ ...form, description: e.target.value })} />
+        <select value={form.category} onChange={e => setForm({ ...form, category: e.target.value as CategoryId })}>
+          {categoriesData.map(c => (<option key={c.id} value={c.id}>{c.icon} {c.name}</option>))}
         </select>
-        <input
-          placeholder="标签（逗号分隔）"
-          value={form.tags}
-          onChange={e => setForm({ ...form, tags: e.target.value })}
-        />
+        <input placeholder="标签（逗号分隔）" value={form.tags} onChange={e => setForm({ ...form, tags: e.target.value })} />
         <div className="form-actions">
-          <button onClick={addOrUpdate}>{editingId ? '更新' : '添加'}</button>
+          <button onClick={addOrUpdate} disabled={saving}>{saving ? '保存中...' : editingId ? '更新' : '添加'}</button>
           {editingId && (
-            <button className="btn-cancel" onClick={() => { setEditingId(null); setForm({ title: '', url: '', description: '', category: 'other', tags: '' }); }}>
-              取消
-            </button>
+            <button className="btn-cancel" onClick={() => { setEditingId(null); setForm({ title: '', url: '', description: '', category: 'other', tags: '' }); }}>取消</button>
           )}
         </div>
       </div>
 
       <div className="admin-actions-bar">
-        <button className="btn-export" onClick={exportJSON}>📥 导出 links.json</button>
+        <button className="btn-export" onClick={exportJSON}>📥 导出 JSON（备份）</button>
       </div>
 
       <div className="admin-list">
@@ -134,14 +192,10 @@ export default function AdminPanel() {
             </div>
             <div className="admin-link-actions">
               <button onClick={() => edit(link)}>编辑</button>
-              <button className="btn-danger" onClick={() => remove(link.id)}>删除</button>
+              <button className="btn-danger" onClick={() => remove(link)}>删除</button>
             </div>
           </div>
         ))}
-      </div>
-
-      <div className="admin-note">
-        <p>💡 提示：添加或编辑链接后，点击「导出 links.json」按钮，将下载的文件替换到 <code>src/data/links.json</code>，然后重新构建部署即可更新站点。</p>
       </div>
     </div>
   );
