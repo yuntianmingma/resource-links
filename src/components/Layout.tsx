@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Sidebar from './Sidebar';
 import { Outlet } from 'react-router-dom';
+import Icon from './Icon';
 
 export default function Layout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -16,9 +17,9 @@ export default function Layout() {
   return (
     <div className="app-layout">
       <header className="topbar">
-        <button className="menu-btn" onClick={() => setSidebarOpen(!sidebarOpen)}>☰</button>
+        <button className="menu-btn" onClick={() => setSidebarOpen(!sidebarOpen)}><Icon name="menu" size={22} /></button>
         <h1>资源链接站</h1>
-        <button className="theme-btn" onClick={toggleTheme}>{dark ? '☀️' : '🌙'}</button>
+        <button className="theme-btn" onClick={toggleTheme}><Icon name={dark ? 'sun' : 'moon'} size={20} /></button>
       </header>
       <div className={`layout-body ${sidebarOpen ? 'sidebar-open' : ''}`}>
         <div className="sidebar-overlay" onClick={() => setSidebarOpen(false)} />

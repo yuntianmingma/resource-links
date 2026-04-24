@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
+import Icon from '../components/Icon';
 
 export default function Login() {
   const { login } = useAuth();
@@ -22,7 +23,7 @@ export default function Login() {
   return (
     <div className="login-page">
       <form className="login-form" onSubmit={handleSubmit}>
-        <h2>🔒 管理员登录</h2>
+        <h2><Icon name="lock" size={22} /> 管理员登录</h2>
         <input
           type="password"
           placeholder="请输入管理员密码"

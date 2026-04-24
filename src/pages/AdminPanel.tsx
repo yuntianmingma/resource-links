@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import type { Link, CategoryId } from '../types';
 import categoriesData from '../config/categories.json';
+import Icon from '../components/Icon';
 
 const REPO = 'yuntianmingma/resource-links';
 const LINKS_PATH = 'src/data/links.json';
@@ -218,7 +219,7 @@ export default function AdminPanel() {
   if (!token) {
     return (
       <div className="page admin-panel">
-        <h2>🔧 管理面板</h2>
+        <h2><Icon name="settings" size={24} /> 管理面板</h2>
         <div className="admin-form">
           <h3>设置 GitHub Token</h3>
           <p style={{ fontSize: 14, color: 'var(--text-secondary)' }}>
@@ -237,7 +238,7 @@ export default function AdminPanel() {
 
   return (
     <div className="page admin-panel">
-      <h2>🔧 管理面板</h2>
+      <h2><Icon name="settings" size={24} /> 管理面板</h2>
 
       {msg && <div className="admin-msg">{msg}</div>}
 
@@ -259,11 +260,11 @@ export default function AdminPanel() {
       </div>
 
       <div className="admin-actions-bar">
-        <button className="btn-export" onClick={exportJSON}>📥 导出 JSON（备份）</button>
+        <button className="btn-export" onClick={exportJSON}><Icon name="download" size={18} /> 导出 JSON（备份）</button>
       </div>
 
       <div className="admin-form">
-        <h3>🔑 修改管理员密码</h3>
+        <h3><Icon name="key" size={18} /> 修改管理员密码</h3>
         <input type="password" placeholder="旧密码" value={pwdOld} onChange={e => setPwdOld(e.target.value)} />
         <input type="password" placeholder="新密码（至少 4 位）" value={pwdNew} onChange={e => setPwdNew(e.target.value)} />
         <div className="form-actions">

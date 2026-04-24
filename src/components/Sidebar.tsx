@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useLinks } from '../hooks/useLinks';
 import type { CategoryId } from '../types';
+import Icon from './Icon';
 
 export default function Sidebar() {
   const { links, categories } = useLinks();
@@ -21,7 +22,7 @@ export default function Sidebar() {
       </div>
       <nav>
         <NavLink to="/" end className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}>
-          <span className="nav-icon">🏠</span>
+          <span className="nav-icon"><Icon name="home" size={18} /></span>
           <span className="nav-label">全部</span>
           <span className="nav-count">{links.length}</span>
         </NavLink>
@@ -31,7 +32,7 @@ export default function Sidebar() {
             to={`/category/${cat.id}`}
             className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}
           >
-            <span className="nav-icon">{cat.icon}</span>
+            <span className="nav-icon"><Icon name={cat.icon} size={18} /></span>
             <span className="nav-label">{cat.name}</span>
             <span className="nav-count">{counts[cat.id]?.total || 0}</span>
             {counts[cat.id]?.dead > 0 && (
