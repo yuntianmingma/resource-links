@@ -5,10 +5,15 @@
     "url": "https://www.gutenberg.org/",
     "description": "超过 70,000 本免费电子书，涵盖世界经典文学作品",
     "category": "books",
-    "tags": ["免费", "电子书", "英文", "经典"],
+    "tags": [
+      "免费",
+      "电子书",
+      "英文",
+      "经典"
+    ],
     "source": "manual",
     "addedAt": "2026-04-24T00:00:00.000Z",
-    "lastChecked": "2026-04-24T00:00:00.000Z",
+    "lastChecked": "2026-04-24T12:37:23.254Z",
     "status": "active"
   },
   {
@@ -17,10 +22,15 @@
     "url": "https://standardebooks.org/",
     "description": "精心排版、校对的高质量免费电子书",
     "category": "books",
-    "tags": ["免费", "电子书", "精品", "英文"],
+    "tags": [
+      "免费",
+      "电子书",
+      "精品",
+      "英文"
+    ],
     "source": "manual",
     "addedAt": "2026-04-24T00:00:00.000Z",
-    "lastChecked": "2026-04-24T00:00:00.000Z",
+    "lastChecked": "2026-04-24T12:37:23.254Z",
     "status": "active"
   },
   {
@@ -29,11 +39,15 @@
     "url": "https://mangadex.org/",
     "description": "多语言漫画阅读平台，社区驱动的漫画数据库",
     "category": "comics",
-    "tags": ["漫画", "多语言", "免费"],
+    "tags": [
+      "漫画",
+      "多语言",
+      "免费"
+    ],
     "source": "manual",
     "addedAt": "2026-04-24T00:00:00.000Z",
-    "lastChecked": "2026-04-24T00:00:00.000Z",
-    "status": "active"
+    "lastChecked": "2026-04-24T12:37:23.254Z",
+    "status": "dead"
   },
   {
     "id": "4",
@@ -41,10 +55,14 @@
     "url": "https://archive.org/",
     "description": "互联网档案馆，包含大量书籍、视频、软件等数字资源",
     "category": "videos",
-    "tags": ["档案馆", "免费", "综合"],
+    "tags": [
+      "档案馆",
+      "免费",
+      "综合"
+    ],
     "source": "manual",
     "addedAt": "2026-04-24T00:00:00.000Z",
-    "lastChecked": "2026-04-24T00:00:00.000Z",
+    "lastChecked": "2026-04-24T12:37:23.254Z",
     "status": "active"
   },
   {
@@ -53,10 +71,14 @@
     "url": "https://alternativeto.net/",
     "description": "软件替代品搜索引擎，发现各种软件的替代方案",
     "category": "software",
-    "tags": ["软件推荐", "替代品", "众包"],
+    "tags": [
+      "软件推荐",
+      "替代品",
+      "众包"
+    ],
     "source": "manual",
     "addedAt": "2026-04-24T00:00:00.000Z",
-    "lastChecked": "2026-04-24T00:00:00.000Z",
+    "lastChecked": "2026-04-24T12:37:23.254Z",
     "status": "active"
   },
   {
@@ -65,10 +87,14 @@
     "url": "https://sci-hub.se/",
     "description": "科研论文免费获取平台",
     "category": "books",
-    "tags": ["论文", "学术", "免费"],
+    "tags": [
+      "论文",
+      "学术",
+      "免费"
+    ],
     "source": "manual",
     "addedAt": "2026-04-24T00:00:00.000Z",
-    "lastChecked": "2026-04-24T00:00:00.000Z",
+    "lastChecked": "2026-04-24T12:37:23.254Z",
     "status": "unknown"
   },
   {
@@ -77,10 +103,701 @@
     "url": "https://fmhy.net/",
     "description": "互联网最大的免费资源合集导航站，涵盖影视、动漫、游戏、软件、书籍等",
     "category": "other",
-    "tags": ["导航", "免费", "综合", "社区维护"],
+    "tags": [
+      "导航",
+      "免费",
+      "综合",
+      "社区维护"
+    ],
     "source": "manual",
     "addedAt": "2026-04-24T00:00:00.000Z",
-    "lastChecked": "2026-04-24T00:00:00.000Z",
+    "lastChecked": "2026-04-24T12:37:23.254Z",
     "status": "active"
+  },
+  {
+    "id": "rss-xerxye",
+    "title": "op7418/guizang-ppt-skill",
+    "url": "https://github.com/op7418/guizang-ppt-skill",
+    "description": "guizang-ppt-skill",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-rop02y",
+    "title": "refactoringhq/tolaria",
+    "url": "https://github.com/refactoringhq/tolaria",
+    "description": "(no description)",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-nc8vk0",
+    "title": "deepseek-ai/TileKernels",
+    "url": "https://github.com/deepseek-ai/TileKernels",
+    "description": "A kernel library written in tilelang",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-n05443",
+    "title": "google/agents-cli",
+    "url": "https://github.com/google/agents-cli",
+    "description": "The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Goo",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-qb20e6",
+    "title": "YouMind-OpenLab/awesome-gpt-image-2",
+    "url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
+    "description": "🚀 World's largest GPT Image 2 prompt library, updated daily — 1000+ curated prompts with preview images, 16 languages. ",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-kjenww",
+    "title": "openai/privacy-filter",
+    "url": "https://github.com/openai/privacy-filter",
+    "description": "OpenAI Privacy Filter",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-myk69e",
+    "title": "google/skills",
+    "url": "https://github.com/google/skills",
+    "description": "Agent Skills for Google products and technologies",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-fdq4ua",
+    "title": "google-labs-code/design.md",
+    "url": "https://github.com/google-labs-code/design.md",
+    "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structure",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-qxrno9",
+    "title": "huggingface/ml-intern",
+    "url": "https://github.com/huggingface/ml-intern",
+    "description": "🤗 ml-intern: an open-source ML engineer that reads papers, trains models, and ships ML models",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-esaweh",
+    "title": "OpenCoworkAI/open-codesign",
+    "url": "https://github.com/OpenCoworkAI/open-codesign",
+    "description": "Open-source Claude Design alternative. One-click import your Claude Code / Codex API key. Prompt → prototype / slides / ",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-yu27iu",
+    "title": "brexhq/CrabTrap",
+    "url": "https://github.com/brexhq/CrabTrap",
+    "description": "An LLM-as-a-judge HTTP proxy to secure agents in production",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-qs4sfx",
+    "title": "TencentCloud/CubeSandbox",
+    "url": "https://github.com/TencentCloud/CubeSandbox",
+    "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-21602p",
+    "title": "tractorjuice/arc-kit",
+    "url": "https://github.com/tractorjuice/arc-kit",
+    "description": "Enterprise Architecture Governance & Vendor Procurement Toolkit",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-dqe50y",
+    "title": "PerryTS/perry",
+    "url": "https://github.com/PerryTS/perry",
+    "description": "A native TypeScript compiler written in Rust. Compiles TypeScript directly to executables using SWC and LLVM.",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-rdwzy2",
+    "title": "tw93/Kami",
+    "url": "https://github.com/tw93/Kami",
+    "description": "👩‍🚒 Good content deserves good paper.",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-jfz2xe",
+    "title": "VoltAgent/awesome-claude-design",
+    "url": "https://github.com/VoltAgent/awesome-claude-design",
+    "description": "Awesome Claude Design: 68 ready-to-use design system inspirations in DESIGN.md format. Drop one in, scaffold a full UI i",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-uwb819",
+    "title": "NikolayS/pgque",
+    "url": "https://github.com/NikolayS/pgque",
+    "description": "PgQue – Zero-bloat Postgres queue. One SQL file to install, pg_cron to tick.",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-h2oz7k",
+    "title": "shivampkumar/trellis-mac",
+    "url": "https://github.com/shivampkumar/trellis-mac",
+    "description": "(no description)",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-h1l2k7",
+    "title": "forrestchang/andrej-karpathy-skills",
+    "url": "https://github.com/forrestchang/andrej-karpathy-skills",
+    "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfa",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-jdp6gc",
+    "title": "browser-use/browser-harness",
+    "url": "https://github.com/browser-use/browser-harness",
+    "description": "Self-healing browser harness that enables LLMs to complete any task.",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-qz92wg",
+    "title": "kyegomez/OpenMythos",
+    "url": "https://github.com/kyegomez/OpenMythos",
+    "description": "A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the available research",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-6vdtul",
+    "title": "EvoLinkAI/awesome-gpt-image-2-prompts",
+    "url": "https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts",
+    "description": "Curated GPT-Image-2 prompts and image examples across portraits, posters, UI mockups, character sheets, and community ex",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-lqynij",
+    "title": "getagentseal/codeburn",
+    "url": "https://github.com/getagentseal/codeburn",
+    "description": "See where your AI coding tokens go. Interactive TUI dashboard for Claude Code, Codex, and Cursor cost observability.",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-97ucwh",
+    "title": "cathrynlavery/diagram-design",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "description": "Thirteen editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-3sjbr0",
+    "title": "ZeroZ-lab/cc-design",
+    "url": "https://github.com/ZeroZ-lab/cc-design",
+    "description": "High-fidelity HTML design and prototype guidance skill for AI agents",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-mit7g4",
+    "title": "drasimwagan/mdv",
+    "url": "https://github.com/drasimwagan/mdv",
+    "description": "MDV — a Markdown superset for documents, dashboards, and slides with embedded data and visualizations. HTML + PDF export",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-dne5m9",
+    "title": "multica-ai/andrej-karpathy-skills",
+    "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfa",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-grmk88",
+    "title": "bwjoke/BTC-Trading-Since-2020",
+    "url": "https://github.com/bwjoke/BTC-Trading-Since-2020",
+    "description": "Public BTC trading context since 2020.",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-83udjj",
+    "title": "lsdefine/GenericAgent",
+    "url": "https://github.com/lsdefine/GenericAgent",
+    "description": "Self-evolving agent: grows skill tree from 3.3K-line seed, achieving full system control with 6x less token consumption",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-p8of83",
+    "title": "mandiant/gopacket",
+    "url": "https://github.com/mandiant/gopacket",
+    "description": "Gopacket is a clean Go implementation of Impacket, a library intended for working with network protocols.",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-9165y4",
+    "title": "anthropics/claude-desktop-buddy",
+    "url": "https://github.com/anthropics/claude-desktop-buddy",
+    "description": "Reference and an example for the Bluetooth API for makers in Claude Cowork & Claude Code Desktop",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-g8q5s5",
+    "title": "smol-machines/smolvm",
+    "url": "https://github.com/smol-machines/smolvm",
+    "description": "Tool to build & run portable, lightweight, self-contained virtual machines.",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-4q6l8d",
+    "title": "thunderbird/thunderbolt",
+    "url": "https://github.com/thunderbird/thunderbolt",
+    "description": "AI You Control: Choose your models. Own your data. Eliminate vendor lock-in.",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-1lx1c6",
+    "title": "Robbyant/lingbot-map",
+    "url": "https://github.com/Robbyant/lingbot-map",
+    "description": "A feed-forward 3D foundation model for reconstructing scenes from streaming data",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-y0qwcr",
+    "title": "heygen-com/hyperframes",
+    "url": "https://github.com/heygen-com/hyperframes",
+    "description": "Write HTML. Render video. Built for agents.",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-snnuuk",
+    "title": "Lazarus-AI/clearwing",
+    "url": "https://github.com/Lazarus-AI/clearwing",
+    "description": "(no description)",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-2s7m3f",
+    "title": "Nightmare-Eclipse/RedSun",
+    "url": "https://github.com/Nightmare-Eclipse/RedSun",
+    "description": "The Red Sun vulnerability repository",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-z6z0bl",
+    "title": "jackwener/wx-cli",
+    "url": "https://github.com/jackwener/wx-cli",
+    "description": "WeChat local data CLI with daemon architecture",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-gy2b7s",
+    "title": "GainSec/AutoProber",
+    "url": "https://github.com/GainSec/AutoProber",
+    "description": "Hardware hacker’s flying probe automation stack for agent-driven   target discovery, microscope mapping, safety-monitore",
+    "category": "software",
+    "tags": [
+      "GitHub Trending"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-djwsiv",
+    "title": "UK Biobank leak: Health details of 500 000 people are offered for sale",
+    "url": "https://www.bmj.com/content/393/bmj.s781",
+    "description": "Article URL: https://www.bmj.com/content/393/bmj.s781\nComments URL: https://news.ycombinator.com/item?id=47888557\nPoints",
+    "category": "other",
+    "tags": [
+      "Hacker News"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-jxn57n",
+    "title": "Hear your agent suffer through your code",
+    "url": "https://github.com/AndrewVos/endless-toil",
+    "description": "Article URL: https://github.com/AndrewVos/endless-toil\nComments URL: https://news.ycombinator.com/item?id=47888465\nPoint",
+    "category": "other",
+    "tags": [
+      "Hacker News"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-j1tefx",
+    "title": "How to be anti-social – a guide to incoherent and isolating social experiences",
+    "url": "https://nate.leaflet.pub/3mk4xkaxobc2p",
+    "description": "Article URL: https://nate.leaflet.pub/3mk4xkaxobc2p\nComments URL: https://news.ycombinator.com/item?id=47888372\nPoints: ",
+    "category": "other",
+    "tags": [
+      "Hacker News"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-6qkw1g",
+    "title": "nowhere: an entire website encoded in a URL",
+    "url": "https://hostednowhere.com/",
+    "description": "Article URL: https://hostednowhere.com/\nComments URL: https://news.ycombinator.com/item?id=47888337\nPoints: 51\n# Comment",
+    "category": "other",
+    "tags": [
+      "Hacker News"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-6gl3zb",
+    "title": "Mounting tar archives as a filesystem in WebAssembly",
+    "url": "https://jeroen.github.io/notes/webassembly-tar/",
+    "description": "Article URL: https://jeroen.github.io/notes/webassembly-tar/\nComments URL: https://news.ycombinator.com/item?id=47888124",
+    "category": "other",
+    "tags": [
+      "Hacker News"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-89y9w6",
+    "title": "S. Korea police arrest man over AI image of runaway wolf that misled authorities",
+    "url": "https://www.bbc.com/news/articles/c4gx1n0dl9no",
+    "description": "Article URL: https://www.bbc.com/news/articles/c4gx1n0dl9no\nComments URL: https://news.ycombinator.com/item?id=47887683\n",
+    "category": "other",
+    "tags": [
+      "Hacker News"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-kq3vnw",
+    "title": "Spinel: Ruby AOT Native Compiler",
+    "url": "https://github.com/matz/spinel",
+    "description": "Article URL: https://github.com/matz/spinel\nComments URL: https://news.ycombinator.com/item?id=47887334\nPoints: 102\n# Co",
+    "category": "other",
+    "tags": [
+      "Hacker News"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-5m374r",
+    "title": "Composition Shouldn't be this Hard",
+    "url": "https://www.cambra.dev/blog/announcement/",
+    "description": "Article URL: https://www.cambra.dev/blog/announcement/\nComments URL: https://news.ycombinator.com/item?id=47886773\nPoint",
+    "category": "other",
+    "tags": [
+      "Hacker News"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-j710gj",
+    "title": "Show HN: How LLMs Work – Interactive visual guide based on Karpathy's lecture",
+    "url": "https://ynarwal.github.io/how-llms-work/",
+    "description": "All content is based on Andrej Karpathy's \"Intro to Large Language Models\" lecture (youtube.com/watch?v=7xTGNNLPyMI). I ",
+    "category": "other",
+    "tags": [
+      "Hacker News"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
+  },
+  {
+    "id": "rss-324fs4",
+    "title": "Show HN: Gova – The declarative GUI framework for Go",
+    "url": "https://github.com/NV404/gova",
+    "description": "Article URL: https://github.com/NV404/gova\nComments URL: https://news.ycombinator.com/item?id=47886272\nPoints: 58\n# Comm",
+    "category": "other",
+    "tags": [
+      "Hacker News"
+    ],
+    "source": "rss",
+    "addedAt": "2026-04-24T12:37:43.860Z",
+    "lastChecked": "2026-04-24T12:37:43.860Z",
+    "status": "unknown"
   }
 ]
