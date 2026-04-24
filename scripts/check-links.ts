@@ -20,35 +20,46 @@ function sleep(ms: number) {
   return new Promise(r => setTimeout(r, ms));
 }
 
-async function checkUrl(url: string): Promise<'active' | 'dead' | 'unknown'> {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 10000);
+const BROWSER_UA = 'Mozilla/5.0 (compatible; LinkChecker/1.0; +https://github.com/yuntianmingma/resource-links)';
 
+// Anti-bot status codes: site is likely alive but blocking automated checks
+const UNCERTAIN_STATUSES = new Set([403, 429, 503]);
+
+function classifyStatus(code: number): 'active' | 'dead' | 'unknown' {
+  if (code >= 200 && code < 400) return 'active';
+  if (code === 404 || code === 410) return 'dead';
+  if (UNCERTAIN_STATUSES.has(code)) return 'unknown';
+  if (code >= 400) return 'dead';
+  return 'unknown';
+}
+
+async function checkUrl(url: string): Promise<'active' | 'dead' | 'unknown'> {
+  const headers = {
+    'User-Agent': BROWSER_UA,
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.5',
+  };
+
+  // Try HEAD first (lightweight)
   try {
-    const resp = await fetch(url, {
-      method: 'HEAD',
-      signal: controller.signal,
-      headers: { 'User-Agent': 'ResourceLinkChecker/1.0' },
-      redirect: 'follow',
-    });
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 10000);
+    const resp = await fetch(url, { method: 'HEAD', signal: controller.signal, headers, redirect: 'follow' });
     clearTimeout(timeout);
-    return resp.ok ? 'active' : 'dead';
+    return classifyStatus(resp.status);
   } catch {
-    // HEAD failed, try GET as fallback
-    try {
-      const c2 = new AbortController();
-      const t2 = setTimeout(() => c2.abort(), 10000);
-      const resp = await fetch(url, {
-        method: 'GET',
-        signal: c2.signal,
-        headers: { 'User-Agent': 'ResourceLinkChecker/1.0', 'Range': 'bytes=0-0' },
-        redirect: 'follow',
-      });
-      clearTimeout(t2);
-      return resp.ok ? 'active' : 'dead';
-    } catch {
-      return 'unknown';
-    }
+    // fall through to GET
+  }
+
+  // Fallback: GET only first bytes
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 10000);
+    const resp = await fetch(url, { method: 'GET', signal: controller.signal, headers: { ...headers, 'Range': 'bytes=0-0' }, redirect: 'follow' });
+    clearTimeout(timeout);
+    return classifyStatus(resp.status);
+  } catch {
+    return 'unknown';
   }
 }
 
