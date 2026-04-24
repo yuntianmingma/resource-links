@@ -3,11 +3,24 @@ import type { Link, CategoryId } from '../types';
 import categoriesData from '../config/categories.json';
 
 const REPO = 'yuntianmingma/resource-links';
-const FILE_PATH = 'src/data/links.json';
+const LINKS_PATH = 'src/data/links.json';
+const AUTH_PATH = 'src/config/auth.json';
 const TOKEN_KEY = 'gh-token';
 
 function base64(str: string) {
   return btoa(unescape(encodeURIComponent(str)));
+}
+
+async function hashPassword(password: string, salt: string): Promise<string> {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(password + salt);
+  const hash = await crypto.subtle.digest('SHA-256', data);
+  return Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+function randomSalt(): string {
+  return Array.from(crypto.getRandomValues(new Uint8Array(16)))
+    .map(b => b.toString(16).padStart(2, '0')).join('');
 }
 
 export default function AdminPanel() {
@@ -31,7 +44,7 @@ export default function AdminPanel() {
   const loadLinks = useCallback(async () => {
     if (!token) { setLoading(false); return; }
     try {
-      const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}`, { headers: headers() });
+      const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${LINKS_PATH}`, { headers: headers() });
       if (!res.ok) throw new Error(await res.text());
       const data = await res.json();
       const content = JSON.parse(decodeURIComponent(escape(atob(data.content))));
@@ -46,13 +59,18 @@ export default function AdminPanel() {
 
   useEffect(() => { loadLinks(); }, [loadLinks]);
 
+  // Password change
+  const [pwdOld, setPwdOld] = useState('');
+  const [pwdNew, setPwdNew] = useState('');
+  const [changingPwd, setChangingPwd] = useState(false);
+
   // Save links to GitHub API
   const saveToGitHub = async (newLinks: Link[], commitMsg: string) => {
     if (!token) { setMsg('请先设置 GitHub Token'); return false; }
     setSaving(true);
     setMsg('保存中...');
     try {
-      const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}`, {
+      const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${LINKS_PATH}`, {
         method: 'PUT',
         headers: headers(),
         body: JSON.stringify({
@@ -123,6 +141,43 @@ export default function AdminPanel() {
     setLoading(true);
   };
 
+  const changePassword = async () => {
+    if (!pwdOld || !pwdNew) { setMsg('请填写旧密码和新密码'); return; }
+    if (pwdNew.length < 4) { setMsg('新密码至少 4 位'); return; }
+    setChangingPwd(true);
+    setMsg('验证中...');
+    try {
+      // Load current auth.json
+      const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${AUTH_PATH}`, { headers: headers() });
+      if (!res.ok) throw new Error(await res.text());
+      const data = await res.json();
+      const auth = JSON.parse(decodeURIComponent(escape(atob(data.content))));
+
+      // Verify old password
+      const oldHash = await hashPassword(pwdOld, auth.salt);
+      if (oldHash !== auth.hash) { setMsg('旧密码错误'); setChangingPwd(false); return; }
+
+      // Generate new salt + hash
+      const newSalt = randomSalt();
+      const newHash = await hashPassword(pwdNew, newSalt);
+      const newAuth = { salt: newSalt, hash: newHash };
+      const content = JSON.stringify(newAuth, null, 2) + '\n';
+
+      // Save via API
+      const putRes = await fetch(`https://api.github.com/repos/${REPO}/contents/${AUTH_PATH}`, {
+        method: 'PUT', headers: headers(),
+        body: JSON.stringify({ message: 'Update admin password', content: base64(content), sha: data.sha }),
+      });
+      if (!putRes.ok) throw new Error(await putRes.text());
+
+      setMsg('✅ 密码已更新，2 分钟后生效');
+      setPwdOld(''); setPwdNew('');
+    } catch (e) {
+      setMsg(`修改失败: ${(e as Error).message}`);
+    }
+    setChangingPwd(false);
+  };
+
   const exportJSON = () => {
     const blob = new Blob([JSON.stringify(links, null, 2)], { type: 'application/json' });
     const a = document.createElement('a');
@@ -179,6 +234,15 @@ export default function AdminPanel() {
 
       <div className="admin-actions-bar">
         <button className="btn-export" onClick={exportJSON}>📥 导出 JSON（备份）</button>
+      </div>
+
+      <div className="admin-form">
+        <h3>🔑 修改管理员密码</h3>
+        <input type="password" placeholder="旧密码" value={pwdOld} onChange={e => setPwdOld(e.target.value)} />
+        <input type="password" placeholder="新密码（至少 4 位）" value={pwdNew} onChange={e => setPwdNew(e.target.value)} />
+        <div className="form-actions">
+          <button onClick={changePassword} disabled={changingPwd}>{changingPwd ? '提交中...' : '修改密码'}</button>
+        </div>
       </div>
 
       <div className="admin-list">
