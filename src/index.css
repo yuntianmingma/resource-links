@@ -571,6 +571,67 @@ a {
   border-radius: 4px;
 }
 
+/* === Login Page === */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - var(--topbar-height) - 48px);
+}
+
+.login-form {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.login-form input {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 16px;
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+}
+
+.login-form input:focus {
+  border-color: var(--accent);
+}
+
+.login-form button {
+  padding: 12px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.login-form button:hover {
+  background: var(--accent-hover);
+}
+
+.login-error {
+  color: var(--dead);
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
 /* === Responsive === */
 @media (max-width: 768px) {
   .menu-btn {
