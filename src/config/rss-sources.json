@@ -5,18 +5,8 @@
     "category": "books"
   },
   {
-    "name": "Standard Ebooks",
-    "url": "https://rsshub.app/standardebooks/new",
-    "category": "books"
-  },
-  {
     "name": "xkcd",
     "url": "https://xkcd.com/rss.xml",
-    "category": "comics"
-  },
-  {
-    "name": "MangaPlus",
-    "url": "https://rsshub.app/mangaplus/latest",
     "category": "comics"
   },
   {
@@ -27,11 +17,6 @@
   {
     "name": "GitHub Trending",
     "url": "https://raw.githubusercontent.com/mhadidg/gh-trends/refs/heads/main/feed/rss.xml",
-    "category": "software"
-  },
-  {
-    "name": "AlternativeTo",
-    "url": "https://alternativeto.net/feed/new/",
     "category": "software"
   },
   {

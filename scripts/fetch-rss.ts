@@ -25,13 +25,23 @@ interface Link {
 }
 
 const parser = new Parser({
-  timeout: 15000,
-  headers: { 'User-Agent': 'ResourceLinkRSS/1.0' },
+  timeout: 20000,
+  headers: { 'User-Agent': 'Mozilla/5.0 (compatible; RSSReader/1.0)' },
 });
+
+function withTimeout<T>(promise: Promise<T>, ms: number): Promise<T> {
+  return new Promise((resolve, reject) => {
+    const timer = setTimeout(() => reject(new Error(`Timeout after ${ms}ms`)), ms);
+    promise.then(
+      v => { clearTimeout(timer); resolve(v); },
+      e => { clearTimeout(timer); reject(e); }
+    );
+  });
+}
 
 async function fetchSource(source: RssSource): Promise<Partial<Link>[]> {
   try {
-    const feed = await parser.parseURL(source.url);
+    const feed = await withTimeout(parser.parseURL(source.url), 30000);
     console.log(`  RSS: ${source.name} — ${feed.items?.length || 0} items`);
 
     return (feed.items || []).map(item => ({
@@ -43,7 +53,7 @@ async function fetchSource(source: RssSource): Promise<Partial<Link>[]> {
       source: 'rss' as const,
     }));
   } catch (err) {
-    console.error(`  Failed to fetch ${source.name}: ${(err as Error).message}`);
+    console.error(`  ✗ ${source.name}: ${(err as Error).message}`);
     return [];
   }
 }
