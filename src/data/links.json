@@ -114,7 +114,7 @@
   {
     "id": "6",
     "title": "Sci-Hub",
-    "url": "https://sci-hub.se/",
+    "url": "https://www.sci-hub.ee/",
     "description": "科研论文免费获取平台",
     "category": "books",
     "tags": [
@@ -124,7 +124,7 @@
     ],
     "source": "manual",
     "addedAt": "2026-04-24T00:00:00.000Z",
-    "lastChecked": "2026-04-24T13:56:34.721Z",
+    "lastChecked": "2026-04-24T13:58:10.962Z",
     "status": "unknown"
   },
   {
