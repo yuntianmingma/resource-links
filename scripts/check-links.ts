@@ -41,15 +41,19 @@ async function checkUrl(url: string): Promise<'active' | 'dead' | 'unknown'> {
   };
 
   // Try HEAD first (lightweight)
+  let headResult: 'active' | 'dead' | 'unknown' | null = null;
   try {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 10000);
     const resp = await fetch(url, { method: 'HEAD', signal: controller.signal, headers, redirect: 'follow' });
     clearTimeout(timeout);
-    return classifyStatus(resp.status);
+    headResult = classifyStatus(resp.status);
   } catch {
-    // fall through to GET
+    // HEAD failed entirely, fall through to GET
   }
+
+  // If HEAD says active, trust it. Otherwise, verify with GET.
+  if (headResult === 'active') return 'active';
 
   // Fallback: GET only first bytes
   try {
@@ -59,7 +63,8 @@ async function checkUrl(url: string): Promise<'active' | 'dead' | 'unknown'> {
     clearTimeout(timeout);
     return classifyStatus(resp.status);
   } catch {
-    return 'unknown';
+    // Both HEAD and GET failed — if HEAD said anything, use it; otherwise unknown
+    return headResult || 'unknown';
   }
 }
 

@@ -28,9 +28,6 @@ jobs:
       - name: Check dead links
         run: npx tsx scripts/check-links.ts
 
-      - name: Fetch RSS new links
-        run: npx tsx scripts/fetch-rss.ts
-
       - name: Commit data changes
         run: |
           if git diff --quiet src/data/links.json; then
@@ -39,7 +36,7 @@ jobs:
             git config user.name 'github-actions[bot]'
             git config user.email 'github-actions[bot]@users.noreply.github.com'
             git add src/data/links.json
-            git commit -m "Auto: link check & RSS update $(date +%Y-%m-%d)"
+            git commit -m "Auto: link check $(date +%Y-%m-%d)"
             git push
           fi
 

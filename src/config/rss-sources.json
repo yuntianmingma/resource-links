@@ -1,12 +1,1 @@
-[
-  {
-    "name": "Show HN",
-    "url": "https://hnrss.org/show?points=10",
-    "category": "software"
-  },
-  {
-    "name": "Hacker News",
-    "url": "https://hnrss.org/frontpage?count=5&points=100",
-    "category": "other"
-  }
-]
+[]
