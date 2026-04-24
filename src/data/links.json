@@ -1,5 +1,21 @@
 [
   {
+    "id": "1777038110978",
+    "title": "漫画生肉",
+    "url": "https://weloma.art",
+    "description": "漫画生肉资源站",
+    "category": "comics",
+    "tags": [
+      "漫画",
+      "生肉",
+      "可下载"
+    ],
+    "source": "manual",
+    "addedAt": "2026-04-24T13:41:50.977Z",
+    "lastChecked": "2026-04-24T13:41:50.977Z",
+    "status": "unknown"
+  },
+  {
     "id": "1",
     "title": "Project Gutenberg",
     "url": "https://www.gutenberg.org/",
