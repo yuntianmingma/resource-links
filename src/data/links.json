@@ -1,5 +1,17 @@
 [
   {
+    "id": "1777279178750",
+    "title": "Zlibrary",
+    "url": "https://z-library.bz/",
+    "description": "书籍汇聚平台，中文书也多",
+    "category": "books",
+    "tags": [],
+    "source": "manual",
+    "addedAt": "2026-04-27T08:39:38.749Z",
+    "lastChecked": "2026-04-27T08:39:38.749Z",
+    "status": "unknown"
+  },
+  {
     "id": "1777038826728",
     "title": "稻荷神社",
     "url": "https://inarigal.moe",
